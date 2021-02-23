@@ -1,0 +1,92 @@
+
+h1,h3{
+	text-align: center;
+}
+
+body {
+	color: white;
+  	margin: 0;
+  	font-family: Arial, Helvetica, sans-serif;
+  	background-image: url(bancarrota.jpg);
+}
+.error{
+	color:Red;
+	height: 150px;
+	padding: 15px;
+	background-color:black;
+}
+.resultado{
+	background-color:black;
+	padding:15px;
+	height: 15px;
+	margin-bottom: 10px;
+}
+article{
+	margin-bottom:150px;
+}
+.topnav {
+  	overflow: hidden;
+  	background-color: #333;
+  	display: flex;
+  	justify-content: center;
+ 
+}
+
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.topnav a.active {
+	background-color: #1a73e8;
+	color: white;
+}
+.centro {
+  	display: grid;
+  	grid-template-columns: repeat(4, 1fr);
+ 	 grid-gap: 10px;
+	  grid-auto-rows: 200px;
+  	grid-template-areas:
+   	 ". a a ."
+   	 ". a a .";
+}
+.uno {
+  	grid-area: a;
+  	align-self: center;
+  	justify-self: center;
+}
+label {
+    grid-column: 1 / 2;
+}
+form{
+	padding-top: 100px;
+	display:grid;
+	grid-template-columns: 200px 1fr;
+	grid-gap: 16px;
+}
+input{
+	grid-column: 2 / 3;
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	font-weight: 400;
+	font-size: 1rem;
+}
+input[type=submit] {
+	background-color: #1a73e8;
+	color: white;
+
+}
